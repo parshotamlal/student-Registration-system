@@ -81,3 +81,88 @@ body {
     background-color: #2563eb;
     transform: scale(1.05);
   }
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  table th {
+    padding: 15px;
+    background-color: #4f46e5;
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    transition: background-color 0.3s;
+  }
+
+  table th:hover {
+    background-color: #3b82f6;
+  }
+
+  table td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+    transition: background-color 0.2s;
+  }
+
+  table tr:hover td {
+    background-color: #f3f4f6;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+
+  /* Action Buttons Styling */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .action-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  /* Edit Button */
+  .edit-btn {
+    background-color: #00f1a1;
+  }
+
+  .edit-btn:hover {
+    background-color: #09f1a8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Delete Button */
+  .delete-btn {
+    background-color: #d80b0b;
+  }
+
+  .delete-btn:hover {
+    background-color: #fb0707;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Button Press Effect */
+  .action-buttons button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
