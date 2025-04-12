@@ -1,1 +1,1 @@
-# student-Registration-syatem
+# student-Registration-system
