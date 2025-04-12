@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+  <header>
+    <h1 class="text-3xl font-bold">Student Registration System</h1>
+  </header>
+
+   <!-- Registration Form Section -->
+   <section id="registration-form" class="max-w-3xl mx-auto mt-8 p-6 bg-white rounded-lg shadow">
+    <h2 class="text-2xl font-semibold mb-4">Register a New Student</h2>
+
+    <!-- Form for registering a new student -->
+    <form id="studentForm" class="space-y-4">
+      <!-- Student Name Field -->
+      <div>
+        <label for="studentName" class="block font-medium mb-1">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required class="w-full px-3 py-2 border rounded-md" />
+      </div>
+<!-- Student ID Field -->
+<div>
+    <label for="studentID" class="block font-medium mb-1">Student ID:</label>
+    <input type="text" id="studentID" name="studentID" required class="w-full px-3 py-2 border rounded-md" />
+  </div>
+ <!-- Email ID Field -->
+ <div>
+    <label for="emailID" class="block font-medium mb-1">Email ID:</label>
+    <input type="email" id="emailID" name="emailID" required class="w-full px-3 py-2 border rounded-md" />
+  </div>
+    <!-- Contact Number Field -->
+    <div>
+        <label for="contactNo" class="block font-medium mb-1">Contact No:</label>
+        <input type="text" id="contactNo" name="contactNo" required class="w-full px-3 py-2 border rounded-md" />
+      </div>
+
+      <!-- Submit Button for the form -->
+      <button type="submit" class="bg-indigo-600 text-white px-5 py-2 rounded hover:bg-indigo-700 transition">Add Detail</button>
+    </form>
+  </section>
+  <!-- Student Records Section -->
+  <section id="studentRecords" class="max-w-5xl mx-auto mt-10 p-6 bg-white rounded-lg shadow">
+    <h2 class="text-2xl font-semibold mb-4">Registered Students</h2>
+
+    <!-- Table to display student records -->
+    <div class="overflow-x-auto">
+      <table class="w-full border border-gray-300 text-left">
+        <thead class="bg-indigo-100">
+          <tr>
+            <!-- Table headers -->
+            <th class="p-3 border">Student Name</th>
+            <th class="p-3 border">Student ID</th>
+            <th class="p-3 border">Email ID</th>
+            <th class="p-3 border">Contact No</th>
+            <th class="p-3 border">Actions</th>
+          </tr>
+        </thead>
+        <!-- Table body where student data will be populated -->
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- External JavaScript File (app.js) -->
+  <script src="app.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
